@@ -10,11 +10,10 @@ $(document).ready(function() {
     countBy = parseInt(countBy);
 
     for (var index=0; index <= countTo; index += countBy) {
-      numberOutput.push(index);
+        numberOutput.push(index);
     }
 
-    numberOutput.toString();
-    $("#numberList").html(numberOutput);
+    $("#numberList").append(numberOutput);
     console.log(numberOutput)
 
     event.preventDefault();
