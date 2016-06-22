@@ -2,8 +2,7 @@ $(document).ready(function() {
 
   var wordInput = '';
   var vowels = ["a", "e", "i", "o", "u"];
-  var wordArray = [];
-
+  
   $("#blanks form").submit(function(event) {
     event.preventDefault();
     var output = [];
@@ -11,7 +10,7 @@ $(document).ready(function() {
     var splitWordInput = wordInput.split("");
 
     splitWordInput.forEach(function(element) {
-      var result = jQuery.inArray(element, vowels);
+      var result = $.inArray(element, vowels);
       if (result >= 0) {
         output.push("-");
       } else {
